@@ -1,0 +1,3 @@
+def eliminar_libro(libro_id):
+    cursor.execute("DELETE FROM libros WHERE id = ?", (libro_id,))
+    conn.commit()
