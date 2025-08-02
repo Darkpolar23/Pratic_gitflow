@@ -1,0 +1,7 @@
+
+def agregar_libro(titulo, autor, anio):
+    cursor.execute(
+        "INSERT INTO libros (titulo, autor, anio) VALUES (?, ?, ?)",
+        (titulo, autor, anio)
+    )
+    conn.commit()
