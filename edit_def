@@ -1,0 +1,6 @@
+def editar_libro(libro_id, titulo, autor, anio):
+    cursor.execute(
+        "UPDATE libros SET titulo = ?, autor = ?, anio = ? WHERE id = ?",
+        (titulo, autor, anio, libro_id)
+    )
+    conn.commit()
