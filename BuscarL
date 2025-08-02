@@ -1,0 +1,3 @@
+def obtener_libros():
+    cursor.execute("SELECT id, titulo, autor, anio FROM libros")
+    return cursor.fetchall()
